@@ -14,6 +14,7 @@ form.addEventListener("submit", (e) => {
     task_content_el.classList.add("content");
 
     task_el.appendChild(task_content_el);
+    
     // Adding the edit and delete button
     const task_input_el = document.createElement("input");
     task_input_el.classList.add("text");
