@@ -71,7 +71,6 @@ input, button {
 #task-submit:active {
     opacity: 0.6;
 }
-
 main {
     flex: 1 1 0%;
     max-width: 800px;
