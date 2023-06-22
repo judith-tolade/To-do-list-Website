@@ -94,6 +94,9 @@ main {
     margin-bottom: 16px;
     border-radius: 50px;
 }
+#tasks .task .content{
+    flex: 1 1 0%;
+}
 #tasks .task .content .text {
     color: var(--light);
     font-size: 18px;
