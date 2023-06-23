@@ -38,7 +38,6 @@ header h1{
     display: flex;
 }
 input, button {
-    appearance: none;
     border: none;
     outline: none;
     background: none;
@@ -75,10 +74,6 @@ input, button {
 .filter-tasks{
     padding:  1rem;
     border-radius: 50px;
-}
-.completed {
-    text-decoration: line-through;
-    opacity: 0.5;
 }
 
 main {
@@ -117,11 +112,11 @@ main {
 #tasks .task .content .text:not(:read-only) {
     color: var(--pink);
 }
-#tasks .task .actions {
+#tasks .task .actions, .complete {
     display: flex;
     margin: 0 8px;
 }
-.task .actions button {
+.task .actions, button {
     cursor: pointer;
     margin: 0 8px;
     font-size: 18px;
@@ -135,13 +130,18 @@ main {
 .task .actions button:active {
     opacity: 0.6;
 }
-.task .actions .edit {
+.task .actions .edit, .complete {
      background-image: linear-gradient(to right, var(--pink), var(--purple)); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .task .actions .delete {
     color: crimson;
+}
+
+.complete{
+   cursor: pointer;
+    transform: scale(2);
 }
 
 
