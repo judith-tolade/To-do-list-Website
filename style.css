@@ -146,5 +146,25 @@ main {
     transform: scale(2);
     text-decoration: line-through;
 }
-
+@media(max-width: 900px) {
+    h1 {
+        font-size: 40px;
+        line-height: 2;
+    }
+    h2{
+        font-size: 44px;
+    }
+    header{
+        padding: 80px 20px;
+        font-size: 30px;
+    }
+    .filter-tasks{
+        padding: 0;
+        text-align: center;
+    }
+    .main{
+        text-align: center;
+        padding: 0;
+    }
+}
 
